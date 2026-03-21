@@ -15,7 +15,7 @@
 <nav class="navbar" id="navbar"> 
 <ul>
  <li><a href="index.html"><img src="images/portfolifoLogo.jpeg"></a></li>
-  <li><a href="index.html">Mbongeleni Sibande</a></li> 
+  <li><a href="index.html" class="headings" class="myHeadings">Mbongeleni Sibande</a></li> 
 <li><a href="index.html">Home</a></li> 
 <li><a href="report.html">About</a></li> 
 <li><a href="knowrights.html">Skills</a></li> 
@@ -41,13 +41,13 @@
 
 
 <div class="content">
-<h1  id="headings"   class="myHeadings">About Me</h1>
-<p>My name is Mbongeleni Sibande Iam a Tech enthisiasist</p>
+<h1  class="headings"   class="myHeadings">About Me</h1>
+<p>My name is Mbongeleni Sibande Iam a Tech enthusiasist</p>
 <p>Iam a Second Year IT student at Sol Platjee University, Iam passionate with Web developement, IT Support,Mobile Development(Java), Ethical Hacking and everything about Tech.</p>
 </div>
 
 
-<h1 id="headings"   class="myHeadings">The Languages i code in:</h1>
+<h1 class="headings" class="myHeadings">The Languages i code in:</h1>
 <div class="mylist">
 <ul>
 <li>HTM5L</li>
@@ -100,7 +100,7 @@
 </div>
 
 
-<h1>My intrests</h1>
+<h1  class="headings"   class="myHeadings" >My intrests</h1>
 <!--My intrests-->
 
 <div class="imagecollage4">
@@ -148,9 +148,9 @@
 
 
 
-<h1 id="headings"   class="myHeadings">Iam a Web Developer</h1>
-<h1 id="headings"   class="myHeadings">Iam an Android developer</h1>
-<h1 id="headings"   class="myHeadings">Certificates i Possess</h1>
+<h1 class="headings"   class="myHeadings">Iam a Web Developer</h1>
+<h1 class="headings"   class="myHeadings">Iam an Android developer</h1>
+<h1 class="headings"   class="myHeadings">Certificates i Possess</h1>
 
 <div class="mylist">
 <ul>
@@ -215,7 +215,8 @@
 </div>
 
 
-<h1>My projects</h1>
+<h1  class="headings"   class="myHeadings">My projects</h1>
+
 
 
 <div class="card-container">
@@ -247,7 +248,7 @@
 
 
 <!--Contact Scection-->
-<h1 id="headings"   class="myHeadings">Contact Me</h1>
+<h1 class="headings"   class="myHeadings">Contact Me</h1>
 
 <div class="formandyoutubecont">
 
@@ -260,7 +261,7 @@
 
 
 <div class="formm">
-<h2   id="headings"   class="myHeadings"      class="happlication">Contact Me</h2> 
+<h2   id="headings"  class="happlication">Contact Me</h2> 
 
 <form action="index.php" method="post">
  
@@ -319,14 +320,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function changeColorDark(){
   document.getElementById("bodyBackground").classList.toggle("bodyDefaultBackground");
-    document.getElementById("myP").classList.toggle("bodyDefaultBackground").textContent="Dark";
+    
   
-
-   
     document.getElementById("scathulo").classList.toggle("backgroundFooter");
-      document.getElementById("headings").classList.toggle("myHeadings");
-   document.getElementById("image").classList.toggle("darkToggle2")= "invert(1)";
+
+
+const headings = document.querySelectorAll(".headings");
+
+headings.forEach(h => {
+    h.classList.toggle("myHeadings");
+});
+
+      //document.getElementById("headings").classList.toggle("myHeadings");
+   // document.querySelectorAll(".headings").classList.toggle("myHeadings");
+
+   //document.getElementById("image").classList.toggle("darkToggle2")= "invert(1)";
 }
+
+
+
 function changeColorLight(){
  document.getElementById("background").style.background="azure"
  //document.getElementById("footerBackground").style.background="azure";
