@@ -6,6 +6,7 @@
     text-align: end;
     /*margin-left:300px;*/
     background-color: rgb(60, 58, 58);
+    
    
 }
 
@@ -34,7 +35,7 @@
         transform: translateX(-50%);
         color:white;
         margin-top: -15px;
-         
+        z-index: 1000;
     }
 
     /* mobile menu */
@@ -98,7 +99,7 @@
    
 }
 
-.navbar a::after {
+.navbar a::after {  
     content: "";
     position: absolute;
     left: 0;
@@ -337,19 +338,9 @@ ul img{width: 90px;
 }
 
 .image4 img:hover {/*transform: translateY(-10px);*/
-                   
-
-              cursor:pointer;
+            cursor:pointer;
               transition: 1s ease-in;
-              
-              
-
 }
-
-
-
-
-
 
 /*Form Section*/
 .formm{border:rgb(200, 188, 188) solid 2px;
@@ -364,12 +355,8 @@ ul img{width: 90px;
       justify-self: center;
       /*margin-left: 700px;*/
       background-color: rgba(139, 139, 153, 0.467);
-    
-
-      
-     
+  
 }
-
 
 .formandyoutubecont  {display: flex;
                       
@@ -377,27 +364,17 @@ ul img{width: 90px;
                       align-items: center;
                       gap:20px;
                       flex-wrap: wrap;
-                     
-
-
 }
 .youtube1 iframe{width: 650px;
                  height:600px;
                  margin-top: 100px;
-
-
 }
 
 @media (max-width: 768px) {
     .youtube1 iframe {max-width: 650px;
                width: 100%;
-              
-               
-
     }
 }
-
-
 
 .formm input,
 .formm select , .formm textarea{/*width:400px;*/
@@ -411,29 +388,23 @@ ul img{width: 90px;
 }
 .formm h2{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
          
-      
-
 }
 .formm label{
              border-radius: 7px ;
-            
-
-
 }
+
 .formm .buttons{
                 border: 1px solid rgb(18, 17, 17);
                 border-radius: 12px;
                 box-shadow: -1px -2px 3px;
 }
 
-
 .formm  .buttons input:hover{text-decoration:underline;
                              
-
 }
+
 .formm textarea{border:2px solid;
                 border-radius: 6px;
-
 
 }
 
@@ -456,8 +427,6 @@ h1{/*color:brown;*/
               color:rgba(255, 255, 255, 0.685);
 
 }
-
-
 
 ul{list-style:circle;
    line-height: 30px;
@@ -498,6 +467,7 @@ footer{text-align: center;
             top:40px;
             border: 1px solid rgb(130, 116, 116);
             border-radius: 20px;
+             z-index: 1000;
          /* filter: invert(1);*/
 }
 @media (max-width:768px ) {
@@ -555,7 +525,6 @@ footer{text-align: center;
              
 }
 
-
 .card{margin: 0px;
   padding:0px; 
   box-sizing: border-box;
@@ -585,9 +554,6 @@ footer{text-align: center;
   padding:0px; 
   box-sizing: border-box;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    
-    
-    
     padding:16px;
               
 }
@@ -623,4 +589,33 @@ footer{text-align: center;
 .image4 p{text-align: center;
 
 
+}
+
+.portfolioHeroImage{width: 100%;
+                    position:relative;
+                    
+             
+
+}
+.portfolioHeroImage img{
+                       width: 100%;
+                        
+
+
+}
+.textOverlay{position: absolute;
+            top:50%;
+            left: 50%;
+            color:rgba(140, 126, 116, 0.871);
+            text-align: start;
+            transform: translate(-50%,-50%);
+            font-size: larger;
+            text-shadow: 1px 1px 1px  white;
+            font-family:Georgia, 'Times New Roman', Times, serif
+} 
+@media (max-width:768px) {
+    .textOverlay{font-size: small;
+
+
+    } 
 }
