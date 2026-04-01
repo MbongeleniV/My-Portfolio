@@ -86,7 +86,8 @@
            font-size: 24px;
           text-wrap: wrap;
            border-radius: 4px;
-           flex-wrap: wrap;   
+           flex-wrap: wrap;  
+           align-items: center; 
 }
 
 .navbar li{margin: 0px;
@@ -141,9 +142,9 @@ body{
 
 
 ul img{width: 90px;
-       height: 80px;
-       border: 1px solid black;
-       border-radius: 200px;
+       height: 50px;
+      /* border: 1px solid black;
+       border-radius: 200px;*/
          
 }
 .portfolioHeroImage img{/*width: 500px;*/
@@ -193,7 +194,7 @@ ul img{width: 90px;
          box-shadow: 1px 1px 1px;
         border-radius:7px ;
         padding: 20px;
-        max-width: 300px;
+        max-width: 200px;
        /* background-color: rgba(223, 160, 131, 0.567);*/
        background-color: rgba(255, 228, 196, 0.338);
         transition: 1s ;
@@ -313,6 +314,7 @@ ul img{width: 90px;
                  
 }
 
+
 .image4 h1{font-size:24px;
            flex-wrap: wrap;
            text-align: center;
@@ -331,6 +333,8 @@ ul img{width: 90px;
     
 }
 
+
+
 .image4 img{display: block;
            margin:auto;
            border: 1px solid rgb(194, 173, 173) ;
@@ -341,6 +345,10 @@ ul img{width: 90px;
             transform: scale(1.2);
 
 }
+
+
+
+
 .image4 p{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         /*padding:10px;*/
         color: rgb(12, 11, 11);
@@ -395,8 +403,9 @@ ul img{width: 90px;
                display: block;
               font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
              border:3px solid rgba(238, 42, 20, 0.429);
-             border-radius: 10px ;
-             
+             border-radius: 5px ;
+             border:none;
+             width:300px
 }
 .formm h2{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
          
@@ -430,8 +439,8 @@ ul img{width: 90px;
 }
 /* H1 code is for all my headings*/
 h1{/*color:brown;*/
-   
-    color:rgb(19, 18, 18);
+   font-size:x-large;
+   color:rgba(19, 18, 18, 0.863);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
    margin:20px;
 }
@@ -441,14 +450,15 @@ h1{/*color:brown;*/
 }
 
 ul{list-style:circle;
-   line-height: 30px;
+   line-height: 25px;
    margin:10px;
+  
 
 }
-.content p{ margin-left:40px;
-           font-size:25px ;
-           line-height: 40px;
-           font-family:Georgia, 'Times New Roman', Times, serif;
+.content p{ margin-left:20px;
+           font-size:large ;
+           line-height: 25px;
+        
 }
 .mylist li{font-size: 20px;
 
@@ -476,8 +486,8 @@ footer{text-align: center;
 .darkToggle{position: absolute;
             justify-self: end;
             cursor: pointer;
-            top:40px;
-            border: 1px solid rgb(130, 116, 116);
+           /* top:40px;*/
+         
             border-radius: 20px;
             z-index: 1000;
            /* animation-name: spinn;
@@ -542,7 +552,7 @@ footer{text-align: center;
                 border:1px solid rgba(0, 128, 0, 0.153);
                 border-radius: 10px;
             
-                background-color: rgba(57, 142, 199, 0.159);
+                background-color: rgba(57, 142, 199, 0.066);
                  background-image:linear-gradient(rgba(57, 142, 199, 0.159), rgba(141, 169, 86, 0.181)),
         url("complaintform.wbp");
                 margin-top: 50px;
@@ -569,12 +579,12 @@ footer{text-align: center;
 }
 
 .card img{margin: 0px;
-  padding:10px; 
-  box-sizing: border-box;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    
-    width: 30px;
-          height:auto;
+         padding:10px; 
+         box-sizing: border-box;
+         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+         filter: drop-shadow(3px 2px 3px rgba(0, 179, 255, 0.762));
+         width: 25px;
+        height:auto;
 }
 .card-content{margin: 0px;
   padding:0px; 
@@ -637,10 +647,11 @@ footer{text-align: center;
             transform: translate(-50%,-50%);
             font-size: larger;
             text-shadow: 1px 1px 1px  white;
-            font-family:Georgia, 'Times New Roman', Times, serif
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            
 } 
 @media (max-width:768px) {
-    .textOverlay{font-size: small;
+    .textOverlay{font-size: 10px;
 
 
     } 
